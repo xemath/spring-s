@@ -1,10 +1,12 @@
 package com.carlos.student;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@Primary
 public class DBStudentService implements StudentService{
     private final StudentRepository repository;
 
